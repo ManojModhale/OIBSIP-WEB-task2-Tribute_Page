@@ -1,0 +1,149 @@
+body
+{
+  padding: 10px 40px;
+}
+
+h1.head 
+{
+  font-size: 6em;
+}
+
+.base 
+{
+  border-radius: 15px;
+  padding: 30px 30px 10px;
+ /* background-color: #eee;*/
+  background-color: rgba( 238, 238, 238, 0.6);
+  text-align: center;
+}
+
+.cover_image .cover 
+{
+  left: 100px;
+  border-radius: 50px;
+  width: 96%;
+  height: 500px;
+}
+
+.hover-underline-animation 
+{
+  display: inline-block;
+  position: relative;
+  color: #0087ca; 
+
+}
+.hover-underline-animation:after 
+{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after 
+{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+#thread3
+{
+  top:2.8em;
+/*  right:15px; */
+  border-color:#b7bf33;
+  -webkit-animation: thread2 6s infinite;
+    -moz-animation:    thread2 6s infinite;
+    -o-animation:      thread2 6s infinite;
+    animation:         thread2 6s infinite; 
+}
+
+.content
+{
+  border-radius: 15px;
+  text-align: left;
+  background-color: rgba(2,148,165,0.6);
+  padding: 15px;
+  font-size: 18px;
+  color: white;
+}
+#tribute-link {
+  display: block;
+  min-height: 30px;
+  min-width: 120px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #fff;
+  background: #e74c3c;
+  width: 25%;
+  text-align: center;
+  padding: 1rem 2rem;
+ /* margin-top: 1rem; */
+  margin-left: 500px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  transition: all 0.2s;
+  box-sizing: border-box;
+}
+#tribute-link:hover
+{
+  background-color: #e3b4e7;
+   color: white;
+}
+
+
+#tribute-info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.content ul {
+  padding: 0 20vw;
+  text-align: left;
+  color: whitesmoke;
+  font-size: 20px;
+  font-weight: bold;
+  list-style: disc;
+  list-style-position: inside;
+}
+
+.content ul li {
+  font-weight: 100;
+}
+
+.content ul li strong:after {
+  content: " - ";
+  font-weight: 100;
+  color: whitesmoke;
+}
+
+.quotes {
+  padding: 0;
+  margin: 0;
+  background-color: #bf4594;
+}
+
+.lastdiv
+{
+  color: #ab3aad;
+  background-color: #97fdc1;
+  height: 60px;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 7px;
+  font-family: serif;
+  padding: 10px;
+  
+}
+
